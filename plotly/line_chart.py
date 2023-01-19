@@ -21,4 +21,4 @@ data = [trace0,trace1,trace2]
 layout = go.Layout(title = 'Line Charts',hovermode='x')
 
 fig = go.Figure(data=data,layout=layout)
-pyo.plot(fig,filename='linecharts.html')
+pyo.plot(fig,filename='HTML/LineCharts.html')
