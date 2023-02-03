@@ -2,7 +2,7 @@ import plotly.offline as pyo
 import plotly.graph_objs as go
 import pandas as pd
 
-df = pd.read_csv('data/mpg.csv')
+df = pd.read_csv('../data/mpg.csv')
 
 data = [go.Histogram(x=df['mpg'],
     xbins=dict(start=0,end=50,size=2))]

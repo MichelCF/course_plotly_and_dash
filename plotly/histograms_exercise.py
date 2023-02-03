@@ -2,7 +2,7 @@ import plotly.offline as pyo
 import plotly.graph_objs as go
 import pandas as pd
 
-df = pd.read_csv('data/abalone.csv')
+df = pd.read_csv('../data/abalone.csv')
 
 data = [go.Histogram(x=df['length'],
     xbins=dict(start=0,end=1,size=.02))]

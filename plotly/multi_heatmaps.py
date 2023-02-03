@@ -3,9 +3,9 @@ import plotly.graph_objs as go
 from plotly import subplots
 import pandas as pd
 
-df1 = pd.read_csv('data/2010SitkaAK.csv')
-df2 = pd.read_csv('data/2010SantaBarbaraCA.csv')
-df3 = pd.read_csv('data/2010YumaAZ.csv')
+df1 = pd.read_csv('../data/2010SitkaAK.csv')
+df2 = pd.read_csv('../data/2010SantaBarbaraCA.csv')
+df3 = pd.read_csv('../data/2010YumaAZ.csv')
 
 trace1 = go.Heatmap(x=df1['DAY'],y=df1['LST_TIME'],
         z=df1['T_HR_AVG'].values.tolist(),

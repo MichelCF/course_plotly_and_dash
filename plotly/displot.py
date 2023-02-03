@@ -10,4 +10,4 @@ group_labels = ['Snodgrass','Twain']
 
 fig = ff.create_distplot(hist_data, group_labels,bin_size=[.005,.005])
 
-pyo.plot(fig,filename='HTML/Displot.HTML')
+pyo.plot(fig,filename='HTML/Displot.html')

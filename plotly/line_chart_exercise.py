@@ -2,7 +2,7 @@ import pandas as pd
 import plotly.offline as pyo
 import plotly.graph_objs as go
 
-df = pd.read_csv('data/Yuma.csv')
+df = pd.read_csv('../data/2010YumaAZ.csv')
 days =['SUNDAY','MONDAY','TUESDAY','WEDNESDAY','THURSDAY','FRIDAY','SATURDAY']
 x_axies= df[df['DAY'] == 'SUNDAY']['LST_TIME']
 

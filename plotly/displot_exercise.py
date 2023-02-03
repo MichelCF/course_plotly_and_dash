@@ -2,7 +2,7 @@ import plotly.offline as pyo
 import plotly.figure_factory as ff
 import pandas as pd
 
-df = pd.read_csv('data/iris.csv')
+df = pd.read_csv('../data/iris.csv')
 
 iris_setosa = df[df['class'] == 'Iris-setosa']['petal_length']
 iris_versicolor = df[df['class']=='Iris-versicolor']['petal_length']
@@ -14,4 +14,4 @@ group_labels = ['Petal Legth Iris Setosa','Petal Legth Iris Versicolor',
 
 fig = ff.create_distplot(hist_data, group_labels)
 
-pyo.plot(fig,filename='HTML/Displot_Exercise.HTML')
+pyo.plot(fig,filename='HTML/Displot_Exercise.html')
